@@ -34,3 +34,6 @@ datasets/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Docker
+*.tar.gz

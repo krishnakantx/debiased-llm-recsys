@@ -14,6 +14,24 @@ python scripts/run_pipeline.py --config configs/test_tiny.yaml --max-samples 50
 python scripts/run_pipeline.py --config configs/mistral_7b.yaml
 ```
 
+## Docker (CPU)
+
+A pre-built CPU Docker image is available on Google Drive.
+
+**Download:** [debiased-llm-recsys.tar.gz](https://drive.google.com/file/d/1ueJpsZwCMGMvzlOcgXE-HAEvEn2RMczo/view?usp=sharing)
+
+```bash
+# Load the image
+docker load < debiased-llm-recsys.tar.gz
+
+# Run the pipeline
+docker run --rm \
+  -v $(pwd)/outputs:/app/outputs \
+  -e HF_TOKEN=hf_xxxx \
+  debiased-llm-recsys \
+  --config configs/llama2_7b.yaml --max-samples 100
+```
+
 ## Project Structure
 
 ```
