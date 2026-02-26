@@ -1,6 +1,6 @@
 # Debiased LLM Recommendation System
 
-Implementation of *Decomposed Alignment for Popularity Bias Mitigation in LLM-Based Generative Recommendation*.
+Implementation of *Multi-Stage Alignment of Large Language Models for Popularity Bias Mitigation in Generative Movie Recommendation*.
 
 ## Quick Start
 
